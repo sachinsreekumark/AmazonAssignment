@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Assignment Suite]">
-  <test thread-count="5" name="Amazon Page Tests(failed)">
+<suite name="Failed suite [Amazon Assignment Suite]">
+  <parameter name="appURL" value="https://google.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="com.amazon.qa.base.ExtentReportListener"/>
+  </listeners>
+  <test name="Amazon Page Tests(failed)">
     <classes>
+      <class name="com.amazon.qa.testcases.ItemDetailsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.qa.testcases.ItemDetailsPageTest -->
+      <class name="com.amazon.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.qa.testcases.HomePageTest -->
+      <class name="com.amazon.qa.testcases.SearchPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.qa.testcases.SearchPageTest -->
+      <class name="com.amazon.qa.testcases.SignInPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.amazon.qa.testcases.SignInPageTest -->
       <class name="com.amazon.qa.testcases.PaymentPageTest">
         <methods>
           <include name="verifyPaymentPage"/>

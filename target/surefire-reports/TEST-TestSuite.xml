@@ -1,73 +1,388 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="TestSuite" time="51.966" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="325.964" tests="11" errors="0" skipped="2" failures="1">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
-    <property name="java.vm.version" value="25.281-b09"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\eclipse workspace\AmazonAutomationTest"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="D:\chromedriver88\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\eclipse workspace\AmazonAutomationTest\target\test-classes;D:\eclipse workspace\AmazonAutomationTest\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\Administrator\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Administrator\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\Administrator\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\Administrator\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\1.3.1\commons-io-1.3.1.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\Administrator\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Administrator\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\Administrator\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Administrator\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\Administrator\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\ooxml-schemas\1.4\ooxml-schemas-1.4.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\Administrator\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\eclipse workspace\AmazonAutomationTest"/>
-    <property name="java.runtime.version" value="1.8.0_281-b09"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\eclipse workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1367508000720878030.tmp"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_281/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_281/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_281/bin/../jre/lib/amd64;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Windows\IsmFiles;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jre1.8.0_281\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_281\bin;;D:\eclipse;;."/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\Administrator"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="SREEKUMAR K"/>
-    <property name="java.class.path" value="D:\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.8.3.20180227-2135\jars\plexus-classworlds-2.5.2.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_281"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\eclipse workspace\AmazonAutomationTest\EMBEDDED"/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire4836167262341719382\surefirebooter5684853677097262583.jar C:\Users\Administrator\AppData\Local\Temp\surefire4836167262341719382 2021-03-19T15-27-58_225-jvmRun1 surefire8173899504144694955tmp surefire_06363775863688352077tmp"/>
+    <property name="surefire.test.class.path" value="D:\eclipse workspace\AmazonAutomationTest\target\test-classes;D:\eclipse workspace\AmazonAutomationTest\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Administrator\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Administrator\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\6.8\testng-6.8.jar;C:\Users\Administrator\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Administrator\.m2\repository\org\beanshell\bsh\2.0b4\bsh-2.0b4.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.27\jcommander-1.27.jar;C:\Users\Administrator\.m2\repository\org\yaml\snakeyaml\1.6\snakeyaml-1.6.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Administrator\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\Administrator\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\Administrator\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\Administrator\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\Administrator\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\Administrator\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\1.3.1\commons-io-1.3.1.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\Administrator\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\Administrator\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\Administrator\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Administrator\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\Administrator\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\poi\ooxml-schemas\1.4\ooxml-schemas-1.4.jar;C:\Users\Administrator\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\Administrator\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="basedir" value="D:\eclipse workspace\AmazonAutomationTest"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire4836167262341719382\surefirebooter5684853677097262583.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="user.name" value="SREEKUMAR K"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Administrator\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="user.dir" value="D:\eclipse workspace\AmazonAutomationTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Administrator\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\Maven/bin;C:\Program Files\Java\jdk1.8.0_281/bin;C:\Program Files\Java\jdk1.8.0_281/bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Windows\IsmFiles;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_281\bin;C:\Program Files\Java\jre1.8.0_281\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_281;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase classname="com.amazon.qa.testcases.HomePageTest" name="gotoLoginPageTest" time="4.564"/>
-  <testcase classname="com.amazon.qa.testcases.HomePageTest" name="homePageTitleTest" time="0.251"/>
-  <testcase classname="com.amazon.qa.testcases.HomePageTest" name="loginButtonValidationTest" time="0.409"/>
-  <testcase classname="com.amazon.qa.testcases.ItemDetailsPageTest" name="buyItem" time="22.082"/>
-  <testcase classname="com.amazon.qa.testcases.PaymentPageTest" name="addInvalidCardAndVerifyError" time="2.488"/>
-  <testcase classname="com.amazon.qa.testcases.PaymentPageTest" name="verifyPaymentPage" time="0.059"/>
-  <testcase classname="com.amazon.qa.testcases.SearchPageTest" name="searchAndSelectItem" time="4.545"/>
-  <testcase classname="com.amazon.qa.testcases.SignInPageTest" name="loginInToAmazon" time="17.454"/>
-  <testcase classname="com.amazon.qa.testcases.SignInPageTest" name="verifySignInPageTitle" time="0.114"/>
+  <testcase name="gotoLoginPageTest" classname="com.amazon.qa.testcases.HomePageTest" time="4.952">
+    <system-out><![CDATA[Directory already exists: D:\eclipse workspace\AmazonAutomationTest\TestReport
+Directory already exists: D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Extent-Report.html
+*** Test Suite Amazon Page Tests started ***
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\addInvalidCardAndVerifyError.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\buyItem.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\gotoLoginPageTest.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\homePageTitleTest.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\loginButtonValidationTest.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\loginInToAmazon.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\searchAndSelectItem.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\verifyPaymentPage.png
+D:\eclipse workspace\AmazonAutomationTest\TestReport\Screenshots\verifySignInPageTitle.png
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+*** Running test method gotoLoginPageTest...
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (db2b9161ae93ca69274b57f30576415c)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (db2b9161ae93ca69274b57f30576415c)] -> xpath: //a[@id='nav-link-accountList']]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 10751
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616147891.348][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:28:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="homePageTitleTest" classname="com.amazon.qa.testcases.HomePageTest" time="0.139">
+    <system-out><![CDATA[*** Executed gotoLoginPageTest test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+*** Running test method homePageTitleTest...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 47502
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616147910.524][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:28:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginButtonValidationTest" classname="com.amazon.qa.testcases.HomePageTest" time="0.63">
+    <system-out><![CDATA[*** Executed homePageTitleTest test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+*** Running test method loginButtonValidationTest...
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 45699
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616147924.508][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:28:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="loginInToAmazon" classname="com.amazon.qa.testcases.SignInPageTest" time="30.154">
+    <system-out><![CDATA[*** Executed loginButtonValidationTest test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //a[@id='nav-link-accountList']]
+*** Running test method loginInToAmazon...
+Trying to find Element By : By.xpath: //input[@name='email']
+Found Element By : By.xpath: //input[@name='email']
+Trying to find Element By : By.xpath: //input[@id='continue']
+Found Element By : By.xpath: //input[@id='continue']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //input[@id='continue']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //input[@id='continue']]
+Trying to find Element By : By.xpath: //input[@name='password']
+Found Element By : By.xpath: //input[@name='password']
+Trying to find Element By : By.xpath: //input[@id='signInSubmit']
+Found Element By : By.xpath: //input[@id='signInSubmit']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //input[@id='signInSubmit']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (ef743713b878fb4041af4a7c118768fb)] -> xpath: //input[@id='signInSubmit']]
+Trying to find Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Found Element By : By.xpath: //a[text()='Click here to refresh the page.']
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 4180
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616147939.895][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:28:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifySignInPageTitle" classname="com.amazon.qa.testcases.SignInPageTest" time="0.045">
+    <system-out><![CDATA[*** Executed loginInToAmazon test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (d96e69d25e4ce8abea7e7a264994083a)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (d96e69d25e4ce8abea7e7a264994083a)] -> xpath: //a[@id='nav-link-accountList']]
+*** Running test method verifySignInPageTitle...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 21925
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616147988.595][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:29:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="searchAndSelectItem" classname="com.amazon.qa.testcases.SearchPageTest" time="9.004">
+    <system-out><![CDATA[*** Executed verifySignInPageTitle test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //a[@id='nav-link-accountList']]
+Trying to find Element By : By.xpath: //input[@name='email']
+Found Element By : By.xpath: //input[@name='email']
+Trying to find Element By : By.xpath: //input[@id='continue']
+Found Element By : By.xpath: //input[@id='continue']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='continue']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='continue']]
+Trying to find Element By : By.xpath: //input[@name='password']
+Found Element By : By.xpath: //input[@name='password']
+Trying to find Element By : By.xpath: //input[@id='signInSubmit']
+Found Element By : By.xpath: //input[@id='signInSubmit']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='signInSubmit']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='signInSubmit']]
+Trying to find Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Found Element By : By.xpath: //a[text()='Click here to refresh the page.']
+*** Running test method searchAndSelectItem...
+Trying to find Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Found Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Trying to find Element By : By.xpath: //input[@id='nav-search-submit-button']
+Found Element By : By.xpath: //input[@id='nav-search-submit-button']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='nav-search-submit-button']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //input[@id='nav-search-submit-button']]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (2cf1f8aa41828276d30959900fa1d702)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 13107
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616148000.737][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:30:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="buyItem" classname="com.amazon.qa.testcases.ItemDetailsPageTest" time="20.094">
+    <system-out><![CDATA[*** Executed searchAndSelectItem test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //a[@id='nav-link-accountList']]
+Trying to find Element By : By.xpath: //input[@name='email']
+Found Element By : By.xpath: //input[@name='email']
+Trying to find Element By : By.xpath: //input[@id='continue']
+Found Element By : By.xpath: //input[@id='continue']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='continue']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='continue']]
+Trying to find Element By : By.xpath: //input[@name='password']
+Found Element By : By.xpath: //input[@name='password']
+Trying to find Element By : By.xpath: //input[@id='signInSubmit']
+Found Element By : By.xpath: //input[@id='signInSubmit']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='signInSubmit']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='signInSubmit']]
+Trying to find Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Found Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Trying to find Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Found Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Trying to find Element By : By.xpath: //input[@id='nav-search-submit-button']
+Found Element By : By.xpath: //input[@id='nav-search-submit-button']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='nav-search-submit-button']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //input[@id='nav-search-submit-button']]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+*** Running test method buyItem...
+There are no children
+The child window is CDwindow-DB93581AC7E5859AF78F628758CD9770
+Trying to find Element By : By.xpath: //Input[@id='buy-now-button']
+Found Element By : By.xpath: //Input[@id='buy-now-button']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //Input[@id='buy-now-button']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (1afcbd319e140afc50f6a08f5e79750a)] -> xpath: //Input[@id='buy-now-button']]
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 9848
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616148038.328][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:30:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="addInvalidCardAndVerifyError" classname="com.amazon.qa.testcases.PaymentPageTest" time="0.92">
+    <system-out><![CDATA[*** Executed buyItem test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.xpath: //a[@id='nav-link-accountList']
+Found Element By : By.xpath: //a[@id='nav-link-accountList']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //a[@id='nav-link-accountList']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //a[@id='nav-link-accountList']]
+Trying to find Element By : By.xpath: //input[@name='email']
+Found Element By : By.xpath: //input[@name='email']
+Trying to find Element By : By.xpath: //input[@id='continue']
+Found Element By : By.xpath: //input[@id='continue']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='continue']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='continue']]
+Trying to find Element By : By.xpath: //input[@name='password']
+Found Element By : By.xpath: //input[@name='password']
+Trying to find Element By : By.xpath: //input[@id='signInSubmit']
+Found Element By : By.xpath: //input[@id='signInSubmit']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='signInSubmit']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='signInSubmit']]
+Trying to find Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Found Element By : By.xpath: //a[text()='Click here to refresh the page.']
+Trying to find Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Found Element By : By.xpath: //input[@id='twotabsearchtextbox']
+Trying to find Element By : By.xpath: //input[@id='nav-search-submit-button']
+Found Element By : By.xpath: //input[@id='nav-search-submit-button']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='nav-search-submit-button']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@id='nav-search-submit-button']]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to find Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Found Element By : By.xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]]
+There are no children
+The child window is CDwindow-C85244865C99398AC7E8BDBAD0C6ED61
+Trying to find Element By : By.xpath: //Input[@id='buy-now-button']
+Found Element By : By.xpath: //Input[@id='buy-now-button']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //Input[@id='buy-now-button']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //Input[@id='buy-now-button']]
+*** Running test method addInvalidCardAndVerifyError...
+Trying to find Element By : By.xpath: //input[@value='SelectableAddCreditCard']
+Found Element By : By.xpath: //input[@value='SelectableAddCreditCard']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@value='SelectableAddCreditCard']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@value='SelectableAddCreditCard']]
+Trying to find Element By : By.xpath: //input[@name='ppw-accountHolderName']
+Found Element By : By.xpath: //input[@name='ppw-accountHolderName']
+Trying to find Element By : By.xpath: //input[@name='ppw-accountHolderName']
+Found Element By : By.xpath: //input[@name='ppw-accountHolderName']
+Trying to find Element By : By.xpath: //input[@name='addCreditCardNumber']
+Found Element By : By.xpath: //input[@name='addCreditCardNumber']
+Trying to find Element By : By.xpath: //input[@name='addCreditCardNumber']
+Found Element By : By.xpath: //input[@name='addCreditCardNumber']
+Trying to find Element By : By.xpath: //input[@name='ppw-widgetEvent:AddCreditCardEvent']
+Found Element By : By.xpath: //input[@name='ppw-widgetEvent:AddCreditCardEvent']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@name='ppw-widgetEvent:AddCreditCardEvent']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (fb0942d7aeafa0f9a382f206dad97cb5)] -> xpath: //input[@name='ppw-widgetEvent:AddCreditCardEvent']]
+Trying to find Element By : By.xpath: //span[text()='Card number is not correct.']
+Found Element By : By.xpath: //span[text()='Card number is not correct.']
+Trying to find Element By : By.xpath: //span[text()='Card number is not correct.']
+Found Element By : By.xpath: //span[text()='Card number is not correct.']
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 34880
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616148112.064][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:31:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="com.amazon.qa.testcases.PaymentPageTest" time="29.869">
+    <failure message="timeout: Timed out receiving message from renderer: 18.954&#10;  (Session info: chrome=89.0.4389.90)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;SREEKUMAR&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3e88caecb6ca3295a5e8624d1851abbb" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 18.954
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SREEKUMAR', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e88caecb6ca3295a5e8624d1851abbb
+	at com.amazon.qa.testcases.PaymentPageTest.setup(PaymentPageTest.java:36)
+]]></failure>
+    <system-out><![CDATA[*** Executed addInvalidCardAndVerifyError test successfully...
+Before navigating to: 'https://www.amazon.in/'
+Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 18.954
+  (Session info: chrome=89.0.4389.90)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SREEKUMAR', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e88caecb6ca3295a5e8624d1851abbb
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 22306
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1616148184.672][WARNING]: This version of ChromeDriver has not been tested with Chrome version 89.
+Mar 19, 2021 3:33:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1616148205.890][SEVERE]: Timed out receiving message from renderer: 18.954
+[1616148205.891][SEVERE]: Timed out receiving message from renderer: 18.954
+]]></system-err>
+  </testcase>
+  <testcase name="verifyPaymentPage" classname="com.amazon.qa.testcases.PaymentPageTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[*** Running test method verifyPaymentPage...
+]]></system-out>
+  </testcase>
+  <testcase name="tearDown" classname="com.amazon.qa.testcases.PaymentPageTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[*** Test verifyPaymentPage skipped...
+]]></system-out>
+  </testcase>
 </testsuite>

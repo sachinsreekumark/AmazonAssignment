@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Amazon Assignment Suite]">
+<suite verbose="0" name="Failed suite [Amazon Assignment Suite]">
   <parameter name="appURL" value="https://google.com"/>
   <parameter name="browserType" value="chrome"/>
   <listeners>
@@ -8,18 +8,25 @@
   </listeners>
   <test name="Amazon Page Tests(failed)">
     <classes>
-      <class name="com.amazon.qa.testcases.ItemDetailsPageTest">
+      <class name="com.amazon.qa.testcases.PaymentPageTest">
         <methods>
+          <include name="verifyPaymentPage"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.amazon.qa.testcases.ItemDetailsPageTest -->
+      </class> <!-- com.amazon.qa.testcases.PaymentPageTest -->
       <class name="com.amazon.qa.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.HomePageTest -->
+      <class name="com.amazon.qa.testcases.ItemDetailsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.amazon.qa.testcases.ItemDetailsPageTest -->
       <class name="com.amazon.qa.testcases.SearchPageTest">
         <methods>
           <include name="setup"/>
@@ -32,13 +39,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.amazon.qa.testcases.SignInPageTest -->
-      <class name="com.amazon.qa.testcases.PaymentPageTest">
-        <methods>
-          <include name="verifyPaymentPage"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.amazon.qa.testcases.PaymentPageTest -->
     </classes>
   </test> <!-- Amazon Page Tests(failed) -->
 </suite> <!-- Failed suite [Amazon Assignment Suite] -->

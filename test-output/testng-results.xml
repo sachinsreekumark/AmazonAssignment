@@ -1,37 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92428" started-at="2021-03-16T06:48:07Z" finished-at="2021-03-16T06:49:40Z">
+  <suite name="Amazon Assignment Suite" duration-ms="313277" started-at="2021-03-19T10:48:45Z" finished-at="2021-03-19T10:53:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="92428" started-at="2021-03-16T06:48:07Z" finished-at="2021-03-16T06:49:40Z">
+    <test name="Amazon Page Tests" duration-ms="313277" started-at="2021-03-19T10:48:45Z" finished-at="2021-03-19T10:53:59Z">
       <class name="com.amazon.qa.testcases.SignInPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="setup" is-config="true" duration-ms="43350" started-at="2021-03-16T12:18:07Z" finished-at="2021-03-16T12:18:51Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="setup" is-config="true" duration-ms="14326" started-at="2021-03-19T16:19:26Z" finished-at="2021-03-19T16:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginInToAmazon()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="loginInToAmazon" duration-ms="21789" started-at="2021-03-16T12:18:51Z" finished-at="2021-03-16T12:19:13Z">
+        <test-method status="PASS" signature="loginInToAmazon()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="loginInToAmazon" duration-ms="27048" started-at="2021-03-19T16:19:40Z" finished-at="2021-03-19T16:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInToAmazon -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="tearDown" is-config="true" duration-ms="1937" started-at="2021-03-16T12:19:13Z" finished-at="2021-03-16T12:19:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="tearDown" is-config="true" duration-ms="1529" started-at="2021-03-19T16:20:08Z" finished-at="2021-03-19T16:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="setup" is-config="true" duration-ms="23992" started-at="2021-03-16T12:19:14Z" finished-at="2021-03-16T12:19:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="setup" is-config="true" duration-ms="14811" started-at="2021-03-19T16:20:09Z" finished-at="2021-03-19T16:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="verifySignInPageTitle()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="verifySignInPageTitle" duration-ms="120" started-at="2021-03-16T12:19:38Z" finished-at="2021-03-16T12:19:39Z">
+        <test-method status="PASS" signature="verifySignInPageTitle()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="verifySignInPageTitle" duration-ms="27" started-at="2021-03-19T16:20:24Z" finished-at="2021-03-19T16:20:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@25bbe1b6]" name="tearDown" is-config="true" duration-ms="1176" started-at="2021-03-16T12:19:39Z" finished-at="2021-03-16T12:19:40Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.SignInPageTest@6166e06f]" name="tearDown" is-config="true" duration-ms="923" started-at="2021-03-19T16:20:25Z" finished-at="2021-03-19T16:20:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amazon.qa.testcases.SignInPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.amazon.qa.testcases.PaymentPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="setup" is-config="true" duration-ms="55359" started-at="2021-03-19T16:22:03Z" finished-at="2021-03-19T16:22:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addInvalidCardAndVerifyError()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="addInvalidCardAndVerifyError" duration-ms="1267" started-at="2021-03-19T16:22:58Z" finished-at="2021-03-19T16:23:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addInvalidCardAndVerifyError -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="tearDown" is-config="true" duration-ms="1484" started-at="2021-03-19T16:23:00Z" finished-at="2021-03-19T16:23:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="setup" is-config="true" duration-ms="55187" started-at="2021-03-19T16:23:01Z" finished-at="2021-03-19T16:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyPaymentPage()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="verifyPaymentPage" duration-ms="190" started-at="2021-03-19T16:23:57Z" finished-at="2021-03-19T16:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.PaymentPageTest@49e202ad]" name="tearDown" is-config="true" duration-ms="1289" started-at="2021-03-19T16:23:57Z" finished-at="2021-03-19T16:23:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.PaymentPageTest -->
+      <class name="com.amazon.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="setup" is-config="true" duration-ms="13119" started-at="2021-03-19T16:18:45Z" finished-at="2021-03-19T16:18:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="gotoLoginPageTest()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="gotoLoginPageTest" duration-ms="2314" started-at="2021-03-19T16:18:58Z" finished-at="2021-03-19T16:19:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoLoginPageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="tearDown" is-config="true" duration-ms="917" started-at="2021-03-19T16:19:01Z" finished-at="2021-03-19T16:19:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="setup" is-config="true" duration-ms="10027" started-at="2021-03-19T16:19:02Z" finished-at="2021-03-19T16:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="homePageTitleTest" duration-ms="201" started-at="2021-03-19T16:19:12Z" finished-at="2021-03-19T16:19:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="tearDown" is-config="true" duration-ms="958" started-at="2021-03-19T16:19:13Z" finished-at="2021-03-19T16:19:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="setup" is-config="true" duration-ms="10066" started-at="2021-03-19T16:19:14Z" finished-at="2021-03-19T16:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginButtonValidationTest()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="loginButtonValidationTest" duration-ms="300" started-at="2021-03-19T16:19:24Z" finished-at="2021-03-19T16:19:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginButtonValidationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.HomePageTest@453da22c]" name="tearDown" is-config="true" duration-ms="867" started-at="2021-03-19T16:19:25Z" finished-at="2021-03-19T16:19:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.HomePageTest -->
+      <class name="com.amazon.qa.testcases.ItemDetailsPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.ItemDetailsPageTest@1372ed45]" name="setup" is-config="true" duration-ms="30911" started-at="2021-03-19T16:21:06Z" finished-at="2021-03-19T16:21:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="buyItem()[pri:0, instance:com.amazon.qa.testcases.ItemDetailsPageTest@1372ed45]" name="buyItem" duration-ms="23585" started-at="2021-03-19T16:21:37Z" finished-at="2021-03-19T16:22:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyItem -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.ItemDetailsPageTest@1372ed45]" name="tearDown" is-config="true" duration-ms="2213" started-at="2021-03-19T16:22:01Z" finished-at="2021-03-19T16:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.ItemDetailsPageTest -->
+      <class name="com.amazon.qa.testcases.SearchPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.testcases.SearchPageTest@71248c21]" name="setup" is-config="true" duration-ms="28633" started-at="2021-03-19T16:20:26Z" finished-at="2021-03-19T16:20:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchAndSelectItem()[pri:0, instance:com.amazon.qa.testcases.SearchPageTest@71248c21]" name="searchAndSelectItem" duration-ms="9016" started-at="2021-03-19T16:20:54Z" finished-at="2021-03-19T16:21:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAndSelectItem -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.testcases.SearchPageTest@71248c21]" name="tearDown" is-config="true" duration-ms="1633" started-at="2021-03-19T16:21:04Z" finished-at="2021-03-19T16:21:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.testcases.SearchPageTest -->
+    </test> <!-- Amazon Page Tests -->
+  </suite> <!-- Amazon Assignment Suite -->
 </testng-results>

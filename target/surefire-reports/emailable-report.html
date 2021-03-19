@@ -31,36 +31,75 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Command line test</td><td class="numi">9</td><td class="numi">9</td><td class="numi">0</td><td class="numi">0</td><td class="numi">362.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Amazon Page Tests</td><td class="numi">8</td><td class="numi">8</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">323.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Command line test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m1"><b>addInvalidCardAndVerifyError</b>  </a></td><td class="numi">1</td><td>1615802445227</td><td class="numi">2489</td></tr>
-<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.ItemDetailsPageTest</td><td><a href="#m2"><b>buyItem</b>  </a></td><td class="numi">1</td><td>1615802350145</td><td class="numi">22082</td></tr>
-<tr class="passedodd"><td rowspan="3">com.amazon.qa.testcases.HomePageTest</td><td><a href="#m3"><b>gotoLoginPageTest</b>  </a></td><td class="numi">1</td><td>1615802278433</td><td class="numi">4563</td></tr><tr class="passedodd"><td><a href="#m4"><b>homePageTitleTest</b>  </a></td><td class="numi">1</td><td>1615802301892</td><td class="numi">251</td></tr><tr class="passedodd"><td><a href="#m5"><b>loginButtonValidationTest</b>  </a></td><td class="numi">1</td><td>1615802310915</td><td class="numi">421</td></tr>
-<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.SignInPageTest</td><td><a href="#m6"><b>loginInToAmazon</b>  </a></td><td class="numi">1</td><td>1615802569501</td><td class="numi">17450</td></tr>
-<tr class="passedodd"><td rowspan="1">com.amazon.qa.testcases.SearchPageTest</td><td><a href="#m7"><b>searchAndSelectItem</b>  </a></td><td class="numi">1</td><td>1615802548936</td><td class="numi">4545</td></tr>
-<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m8"><b>verifyPaymentPage</b>  </a></td><td class="numi">1</td><td>1615802522933</td><td class="numi">59</td></tr>
-<tr class="passedodd"><td rowspan="1">com.amazon.qa.testcases.SignInPageTest</td><td><a href="#m9"><b>verifySignInPageTitle</b>  </a></td><td class="numi">1</td><td>1615802606269</td><td class="numi">116</td></tr>
+<tr><th colspan="4">Amazon Page Tests &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1616148178654</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m2"><b>setup</b>  </a></td><td class="numi">1</td><td>1616148178654</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Amazon Page Tests &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m3"><b>tearDown</b>  </a></td><td class="numi">1</td><td>1616148206505</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Amazon Page Tests &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m4"><b>verifyPaymentPage</b>  </a></td><td class="numi">1</td><td>1616148206065</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Amazon Page Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.amazon.qa.testcases.PaymentPageTest</td><td><a href="#m5"><b>addInvalidCardAndVerifyError</b>  </a></td><td class="numi">1</td><td>1616148176153</td><td class="numi">972</td></tr>
+<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.ItemDetailsPageTest</td><td><a href="#m6"><b>buyItem</b>  </a></td><td class="numi">1</td><td>1616148072060</td><td class="numi">20101</td></tr>
+<tr class="passedodd"><td rowspan="3">com.amazon.qa.testcases.HomePageTest</td><td><a href="#m7"><b>gotoLoginPageTest</b>  </a></td><td class="numi">1</td><td>1616147900205</td><td class="numi">5007</td></tr><tr class="passedodd"><td><a href="#m8"><b>homePageTitleTest</b>  </a></td><td class="numi">1</td><td>1616147917885</td><td class="numi">177</td></tr><tr class="passedodd"><td><a href="#m9"><b>loginButtonValidationTest</b>  </a></td><td class="numi">1</td><td>1616147934485</td><td class="numi">660</td></tr>
+<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.SignInPageTest</td><td><a href="#m10"><b>loginInToAmazon</b>  </a></td><td class="numi">1</td><td>1616147951495</td><td class="numi">30179</td></tr>
+<tr class="passedodd"><td rowspan="1">com.amazon.qa.testcases.SearchPageTest</td><td><a href="#m11"><b>searchAndSelectItem</b>  </a></td><td class="numi">1</td><td>1616148020915</td><td class="numi">9053</td></tr>
+<tr class="passedeven"><td rowspan="1">com.amazon.qa.testcases.SignInPageTest</td><td><a href="#m12"><b>verifySignInPageTitle</b>  </a></td><td class="numi">1</td><td>1616147997563</td><td class="numi">53</td></tr>
 </table>
-<h1>Command line test</h1>
-<h2 id="m1">com.amazon.qa.testcases.PaymentPageTest:addInvalidCardAndVerifyError</h2>
+<h1>Amazon Page Tests</h1>
+<h2 id="m1">com.amazon.qa.testcases.PaymentPageTest:setup</h2>
+<div style="padding-left:3em">
+<p>timeout: Timed out receiving message from renderer: 18.954
+  (Session info: chrome=89.0.4389.90)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SREEKUMAR&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e88caecb6ca3295a5e8624d1851abbb</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+<br/>at com.sun.proxy.$Proxy5.get(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+<br/>at com.amazon.qa.base.TestBase.initialization(TestBase.java:67)
+<br/>at com.amazon.qa.testcases.PaymentPageTest.setup(PaymentPageTest.java:36)
+<br/>31 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.amazon.qa.testcases.ItemDetailsPageTest:buyItem</h2>
+<h2 id="m2">com.amazon.qa.testcases.PaymentPageTest:tearDown</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">com.amazon.qa.testcases.PaymentPageTest:verifyPaymentPage</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.amazon.qa.testcases.SignInPageTest:verifySignInPageTitle</h2>
+<h2 id="m4">com.amazon.qa.testcases.SignInPageTest:loginInToAmazon</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.amazon.qa.testcases.HomePageTest:loginButtonValidationTest</h2>
+<h2 id="m5">com.amazon.qa.testcases.SearchPageTest:searchAndSelectItem</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m6">com.amazon.qa.testcases.HomePageTest:gotoLoginPageTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.amazon.qa.testcases.SignInPageTest:loginInToAmazon</h2>
+<h2 id="m7">com.amazon.qa.testcases.ItemDetailsPageTest:buyItem</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m8">com.amazon.qa.testcases.HomePageTest:homePageTitleTest</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.amazon.qa.testcases.SearchPageTest:searchAndSelectItem</h2>
+<h2 id="m9">com.amazon.qa.testcases.HomePageTest:loginButtonValidationTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.amazon.qa.testcases.PaymentPageTest:addInvalidCardAndVerifyError</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.amazon.qa.testcases.SignInPageTest:verifySignInPageTitle</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

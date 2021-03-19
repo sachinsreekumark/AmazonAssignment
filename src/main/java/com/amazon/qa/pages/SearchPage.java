@@ -18,7 +18,7 @@ public class SearchPage extends TestBase {
 		// TODO Auto-generated constructor stub
 	}
 	
-	Map<String, String> map = TestUtil.getAmazonTestData();	
+	
 	
 	@FindBy(xpath="//input[@id='twotabsearchtextbox']")
 	WebElement searchBar;
@@ -26,7 +26,7 @@ public class SearchPage extends TestBase {
 	@FindBy(xpath="//input[@id='nav-search-submit-button']")
 	WebElement searchButton;
 	
-	String productDesp=map.get("Product_Description");
+
 	
 	@FindBy(xpath="//span[contains(text(),'Samsung Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)')]")
 	WebElement mobile;
@@ -40,7 +40,7 @@ public class SearchPage extends TestBase {
 	
 	public ItemDetailsPage searchItemAndClick() throws IOException
 	{
-		
+		Map<String, String> map = TestUtil.getAmazonTestData();	
 		searchBar.sendKeys(map.get("Product_Name"));
 		searchButton.click();
 		
